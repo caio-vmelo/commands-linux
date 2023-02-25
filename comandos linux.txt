@@ -55,7 +55,7 @@ cat == ver arquivo de texto
 sudo == comando de adminstrador
 
 su == logar como root --> nao precisa usar sudo para nada
-su caio == volto pro usuario convencional
+su username == volto pro usuario convencional
 
 systemctl status sshd
 
