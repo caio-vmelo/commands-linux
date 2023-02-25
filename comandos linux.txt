@@ -1,0 +1,88 @@
+# == usuario root
+//shell == meio caminho entre o terminal e o kernel
+
+//todo comando tem que ser minusculo
+
+pwd == saber a pasta na qual eu estou --> \ == diretorio raiz
+
+ls == listar arquivos 
+cd == change director
+cd .. == volta um diretorio
+
+o que está em azul é um diretorio quando da ls
+
+--> quando quero acessar uma pasta dentro do diretorio que estou n precisa usar a barra
+
+TAB duas vezes mostra o que tem dentro do diretorio
+
+ls | more == barra de rolagem dentro do virtualbox, putty n precisa
+
+ls p* == diretorios que começam com p e o que tem dentro de cada um 
+
+ls m?g* == sabendo a posição de cada letra do dir q vc ta procurando
+
+touch arquivo.txt == criar arquivo
+
+cd ~ == vai direto para o diretorio pessoal home/caio
+
+ls arquivo[1-3]* == lista do 1 ao 3
+
+ls arquivo[1,3]* == lista apenas o 1 e o 3
+
+ls arquivo[^1,3]* == nao lista do 1 ao 3
+
+find -name == buscando arquivo pelo nome a partir do dir q tu ta
+
+//Criação de diretorios
+mkdir == criar diretorio
+mkdir 'Meus Documentos' == pra saber que tem espaço no nome --> acessar com cd 'Meus Documentos'/
+
+//Comandos de remoção
+rmdir == remover diretorio
+rm == excluir arquivos 
+rm -r == excluir tudo q tem dentro do diretorio
+rm -rf == exclui tudo, diretorio e os arquivos tambem
+cd /
+ls --help == ajuda 
+ls -l == tipo de lista
+ls -a == lista arquivos que estao ocultos 
+
+man ls == ajuda sobre o comando ls por exemplo
+help cd
+
+cat == ver arquivo de texto
+
+sudo == comando de adminstrador
+
+su == logar como root --> nao precisa usar sudo para nada
+su caio == volto pro usuario convencional
+
+systemctl status sshd
+
+
+ssh = protocolo de acesso remoto
+cat /etc/ssh/sshd_config == liberar acesso remoto via root
+
+vi == editor de texto
+
+nano == editor de texto
+
+vi leia-me.txt == criar ou abrir um arquivo existente.
+
+history | grep "nomedoarquivo" == comandos usados nesse nomedoarquivo
+
+export HISTTIMEFORMAT="%c" == data e hora q o comando foi usado ai usa o history dnv
+
+set +o history == desativa o historico
+
+
+
+
+
+
+
+
+
+
+
+
