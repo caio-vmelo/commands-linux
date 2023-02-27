@@ -1,0 +1,36 @@
+//gerenciamento de discos
+
+lsblk --> discos disponiveis.
+   sda
+     --->sda1..
+
+fdisk -l --> listar informaçõs do disco.
+
+fdisk /dev/sdb --> chama command para particionar o disco desejado.
+
+fylesistem do linux == EXT4
+
+mkfs.ext4 /dev/sdb ---> formatando o disco no formato ext4.
+
+//montando e desmontando discos
+
+diretório nmt --> dir para montar discos
+
+mkdir disco2 dentro desse dir
+mount /dev/sdb/mnt/disco2/ --> montando disco no dir disco2 dentro do mnt
+
+umount /dev/sdb --> desmontando disco.
+
+//montando discos automaticamente
+
+nano /etc/fstab 
+
+/dev/sdb /disk2 ext4 defaults 0 0 --> colocar dentro deste nano
+
+o comando acima ira sempre montar o disco, mesmo que voce reinicie a maquina
+
+
+
+
+
+
