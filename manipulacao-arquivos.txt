@@ -1,0 +1,43 @@
+//Copiando arquivos
+
+cp --help ---> para todos os parametros
+
+cp /home/caio/*.txt /disk2 ---> copiando todos que tem a extensão .txt
+
+cp /home/caio/bancodedos.mdf /disk2/ ---> copiando 1 unico arquivo a partir de sua origem para seu destino
+
+cp -i --> pergunta antes de sobrepor
+
+cp /home/caio/* /disk/ -i --> exemplo do explicito acima
+
+cp -r --> copia os arquivos e os DIRETORIOS recursivamente (vem tudo junto)
+
+cp /home/caio/* /disk2/ -r -v --> verbose (diz tudo que ta fazendo)
+
+
+//MOVER ARQUIVOS
+
+mv /home/caio/planilhas.txt /disk2/ --> mv para mover da origem para o destino
+
+mv /home/caio* /disk2/ -i -v --> pergunta se quer mover e coloca em verbose
+
+mv arquivo.txt arquivo_de_texto.txt ---> RENOMEAR ARQUIVOS
+
+
+//Iniciar, visualizar e encerrar um processo;
+
+ps --> mostra os processos do usuario atual
+
+ps a(todos users) u(username) x(executados fora do console) --> ps aux 
+
+kill 1223(numero do processo) ---> para derrubar um processo
+
+killall chrome --> encerra todos os processos do chrome
+
+w --> mostar usuarios que estao logados no momento
+
+who -a --> mostra o pid
+
+kill 2121 --> derruba um usuario atravez do numero do pid
+
+
