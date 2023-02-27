@@ -1,0 +1,37 @@
+criando usuario
+ useradd username
+
+ userdel -f (para forçar) username
+
+ useradd -m (cria na home) -c "nome completo"
+
+ useradd convidado1 -c "convidado especial" -s /bin;bash -m -p $(openssl passwd -crypt Senha123)
+
+ criar diretorio / dentro do diretorio criar arquivo nano
+ #!/bin/bash
+ useradd guest10 -c "Usuário convidado" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
+ passwd guest10 -e (pedir para o usuario trocar a senha)
+
+//proximo passo
+chmod +x criar_user.sh (chama pra poder executar o arquivo)
+./criar_user.sh (executa os arquivos)
+
+/mudando user de grupo
+-G para varios grups e -g para um so grupo
+usermod -G sudo,mod nelsinho
+
+gpasswd -d nelso sudo 
+
+//criando grupo
+groupadd GRP_ADM pra remover groupdel nomedogrupo
+
+
+//diretorios --> para manipular permições (chmod 750)...
+leitura(r) == 4
+gravação(w) == 2
+execução(x) == 1 
+
+
+chown root:GRP_ADM texto.txt ---> change owner desse certo arquivo
+
+
