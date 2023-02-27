@@ -1,0 +1,19 @@
+//gerenciar pacotes no linux
+
+apt-get --> mais baixo nivel // utilizado dentro de um script
+
+apt --> mais moderno e melhor interação com o usuário
+
+apt edit-sourcers //
+
+//atualização do sistema operacional
+
+
+--> sempre criar uma sreenshot 
+
+apt update
+apt upgrade
+
+--> logo apos, realizar testes se as aplicações estarão funcionando corretamente.
+
+
